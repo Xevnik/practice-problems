@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title>Problem 32</title>
+    <script>
+        function find_middle_letters(string){
+            var stringLen = string.length;
+            var stringHalf = stringLen/2;
+            if(stringLen%2 == 0){
+                return string.substr((stringHalf-1),2);
+            }
+            return string[Math.floor(stringHalf)];
+        }
+        document.writeln(find_middle_letters(prompt("enter a string")));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
